@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:ems="10"
+        android:gravity="bottom|end"
+        android:inputType="none"
+        android:maxLength="36"
+        android:text="0"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnsOperacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/number1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number4"
+        app:layout_constraintEnd_toStartOf="@+id/number2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsOperacao"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number5"
+        app:layout_constraintEnd_toStartOf="@+id/number3"
+        app:layout_constraintStart_toEndOf="@+id/number1"
+        app:layout_constraintTop_toBottomOf="@+id/btnsOperacao"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:text="3"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number2"
+        app:layout_constraintTop_toBottomOf="@+id/btnsOperacao"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number7"
+        app:layout_constraintEnd_toStartOf="@+id/number5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- Botões de operação -->
+
+    <Button
+        android:id="@+id/number5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="5"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number8"
+        app:layout_constraintEnd_toStartOf="@+id/number6"
+        app:layout_constraintStart_toEndOf="@+id/number4"
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="6"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number5"
+        app:layout_constraintTop_toBottomOf="@+id/number3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="7"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/erased"
+        app:layout_constraintEnd_toStartOf="@+id/number8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="8"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/number0"
+        app:layout_constraintEnd_toStartOf="@+id/number9"
+        app:layout_constraintStart_toEndOf="@+id/number7"
+        app:layout_constraintTop_toBottomOf="@+id/number5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="9"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/equal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number8"
+        app:layout_constraintTop_toBottomOf="@+id/number6"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/number0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equal"
+        app:layout_constraintStart_toEndOf="@+id/erased"
+        app:layout_constraintTop_toBottomOf="@+id/number8"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/erased"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="⌫"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/number0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number7" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif"
+        android:text="="
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:autoSizeTextType="uniform"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number0"
+        app:layout_constraintTop_toBottomOf="@+id/number9"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/btnsOperacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/number2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:autoSizeTextType="uniform"
+            android:typeface="monospace"
+            android:contentDescription="Adicionar" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:autoSizeTextType="uniform"
+            android:typeface="monospace"
+            android:contentDescription="Subtrair" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif"
+            android:text="×"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:autoSizeTextType="uniform"
+            android:typeface="monospace"
+            android:contentDescription="Multiplicar" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif"
+            android:text="÷"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:autoSizeTextType="uniform"
+            android:typeface="monospace"
+            android:contentDescription="Dividir" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
